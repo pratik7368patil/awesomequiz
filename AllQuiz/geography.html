@@ -67,64 +67,71 @@
       </div>
     </nav>
 
-    <header>
-      <h1><span class="main-head">Geography Quiz</span></h1>
-    </header>
+    <div class="main">
+      <picture>
+        <img src="../images/geo1.jpg" class="img-fluid allow-text" />
+      </picture>
+    </div>
+
     <section class="main-section">
+      <header>
+        <h1><span class="main-head">Geography Quiz</span></h1>
+      </header>
       <ol class="all_question">
         <header class="easy_heading" id="easy">
-          <span class="level_heading">Easy Section :</span>
-          <a href="#hard" class="btn btn-outline-primary btn-sm"
-            >Jump to hard section</a
-          >
+          <span class="level_heading">Easy Section</span>
         </header>
         <div class="question">
           <!--1-->
           <li>
             Where is Mount Everest?
           </li>
-          <ul>
+          <ol>
             <li>Kenya</li>
             <li>The Alps</li>
             <li>The border between Nepal and China</li>
             <li>India</li>
-          </ul>
-          <strong>Ans : The border between Nepal and China</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_1" id="que_1" />
         </div>
         <div class="question">
           <!--2-->
           <li>
             Which of these countries is the smallest?
           </li>
-          <ul>
+          <ol>
             <li>Ukrain</li>
             <li>Russia</li>
             <li>China</li>
             <li>India</li>
-          </ul>
-          <strong>Ans : Ukrain</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_2" id="que_2" />
         </div>
         <div class="question">
           <!--3-->
           <li>What's the capital of Poland?</li>
-          <ul>
+          <ol>
             <li>Warsaw</li>
             <li>Paris</li>
             <li>Berlin</li>
             <li>Pochinki</li>
-          </ul>
-          <strong>Ans : Warsaw</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_3" id="que_3" />
         </div>
         <div class="question">
           <!--4-->
           <li>
             Kazakhstan is in Europe. True or false?
           </li>
-          <ul>
+          <ol>
             <li>False</li>
             <li>True</li>
-          </ul>
-          <strong>Ans : False</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_4" id="que_4" />
         </div>
         <div class="question">
           <!--5-->
@@ -137,30 +144,29 @@
             />
           </picture>
           <br />
-          <ul>
+          <ol>
             <li>Nepal</li>
             <li>Gujrat</li>
             <li>China</li>
             <li>India</li>
-          </ul>
-          <strong>Ans : India</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_5" id="que_5" />
         </div>
         <header class="hard_heading" id="hard">
-          <span class="level_heading">Hard Section :</span>
-          <a href="#easy" class="btn btn-outline-primary btn-sm"
-            >Jump to easy section</a
-          >
+          <span class="level_heading">Hard Section</span>
         </header>
         <div class="question">
           <!--6-->
           <li>Which of these countries is NOT in Africa?</li>
-          <ul>
+          <ol>
             <li>Tanzania</li>
             <li>Egypt</li>
             <li>Zimbabwe</li>
             <li>Malaysia</li>
-          </ul>
-          <strong>Ans : Malaysia</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_6" id="que_6" />
         </div>
 
         <div class="question">
@@ -168,35 +174,38 @@
           <li>
             Do polar bears live near the North Pole or South Pole?
           </li>
-          <ul>
+          <ol>
             <li>North Pole</li>
             <li>South Pole</li>
             <li>East Pole :)</li>
             <li>West pole :)</li>
-          </ul>
-          <strong>Ans : North Pole</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_7" id="que_7" />
         </div>
         <div class="question">
           <!--8-->
           <li>There are volcanoes in Europe, true or false?</li>
-          <ul>
+          <ol>
             <li>Yes</li>
             <li>No</li>
-          </ul>
-          <strong>Ans : Yes</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_8" id="que_8" />
         </div>
         <div class="question">
           <!--9-->
           <li>
             Which country has the most natural lakes?
           </li>
-          <ul>
+          <ol>
             <li>Russia</li>
             <li>England</li>
             <li>Brazil</li>
             <li>Canada</li>
-          </ul>
-          <strong>Ans : Canada</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_9" id="que_9" />
         </div>
         <div class="question">
           <!--10-->
@@ -204,16 +213,36 @@
             Here's a Star Wars question! Which African country was used as the
             backdrop for scenes set in Tatooine?
           </li>
-          <ul>
+          <ol>
             <li>Morocco</li>
             <li>Tunisia</li>
             <li>Kenya</li>
             <li>Algeria</li>
-          </ul>
-          <strong>Ans : Tunisia</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_10" id="que_10" />
         </div>
       </ol>
     </section>
+
+    <div class="container mb-4">
+      <div class="row justify-content-center">
+        <span class="result" id="result"></span>
+      </div>
+    </div>
+
+    <div class="container mb-4">
+      <div class="row justify-content-center">
+        <button
+          class="btn btn-primary"
+          onclick="cal_parcentage()"
+          type="submit"
+        >
+          Get Result
+        </button>
+      </div>
+    </div>
+
     <!-- footer tag starts here-->
     <footer>
       <div class="footer_para">
@@ -227,6 +256,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/geography.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

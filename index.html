@@ -73,31 +73,46 @@
     </nav>
 
     <div class="main">
-      <picture>
-        <img src="./images/newback.jpg" class="main-img" />
-      </picture>
+      <div class="main-img"></div>
       <div class="main-con">
-        <h3 class="main-text-para">This is Awesome quiz</h3>
-        <p class="text-muted main-text-innerpara">Boost your brain!</p>
+        <h3 class="main-text-para">
+          <span class="main-head-main">This is Awesome quiz</span>
+        </h3>
+        <p class="main-text-innerpara">Boost your brain!</p>
         <div class="text-center">
           <a
             href="./AllQuiz/general.html"
-            class="btn btn-primary btn-lg bg-dark"
+            class="btn btn-primary btn-lg mb-4 main-btn"
             target="_blank"
           >
-            Try General
-          </a>
+            Try General </a
+          ><br />
+          <form action="../data/data.php" method="POST">
+            <span
+              class="d-inline-block"
+              data-toggle="popover"
+              data-content="Work in Progress"
+            >
+              <button
+                class="btn btn-outline-primary btn-sm like-btn"
+                type="submit"
+                disabled
+              >
+                Like
+              </button>
+            </span>
+          </form>
         </div>
       </div>
     </div>
 
     <section class="container mt-4 mb-4">
       <div class="row mt-4 mb-2">
-        <div class="col-md-3 d-flex mt-2">
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
           <div class="card text-white bg-dark flex-fill">
             <picture>
               <img
-                src="./images/genral.jpg"
+                src="./images/general.jpg"
                 class="card-img-top"
                 alt="history"
               />
@@ -112,7 +127,7 @@
             <div class="card-footer">
               <a
                 href="./AllQuiz/general.html"
-                class="btn btn-outline-primary"
+                class="btn btn-primary start-btn"
                 target="_blank"
                 >Start</a
               >
@@ -120,7 +135,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 d-flex mt-2">
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
           <div class="card text-white bg-secondary flex-fill">
             <picture>
               <img src="./images/geo1.jpg" class="card-img-top" alt="history" />
@@ -135,14 +150,14 @@
               <a
                 href="./AllQuiz/geography.html"
                 target="_blank"
-                class="btn btn-primary bg-dark"
+                class="btn btn-primary start-btn"
                 >Start</a
               >
             </div>
           </div>
         </div>
 
-        <div class="col-md-3 d-flex mt-2">
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
           <div class="card bg-lightgray flex-fill">
             <picture>
               <img
@@ -162,14 +177,14 @@
               <a
                 href="./AllQuiz/history.html"
                 target="_blank"
-                class="btn btn-outline-primary"
+                class="btn btn-primary start-btn"
                 >Start</a
               >
             </div>
           </div>
         </div>
 
-        <div class="col-md-3 d-flex mt-2">
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
           <div class="card flex-fill">
             <picture>
               <img
@@ -188,7 +203,7 @@
               <a
                 href="./AllQuiz/space.html"
                 target="_blank"
-                class="btn btn-outline-primary"
+                class="btn btn-primary start-btn"
                 >Start</a
               >
             </div>
@@ -210,6 +225,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

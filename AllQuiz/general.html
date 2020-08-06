@@ -67,30 +67,34 @@
       </div>
     </nav>
 
-    <header>
-      <h1><span class="main-head">Space Quiz</span></h1>
-    </header>
+    <div class="main">
+      <picture>
+        <img src="../images/general.jpg" class="img-fluid allow-text" />
+      </picture>
+    </div>
+
     <section class="main-section">
+      <header>
+        <h1><span class="main-head">General Quiz</span></h1>
+      </header>
       <ol class="all_question">
         <header class="easy_heading" id="easy">
-          <span class="level_heading">Easy Section :</span>
-          <a href="#hard" class="btn btn-outline-primary btn-sm"
-            >Jump to hard section</a
-          >
+          <span class="level_heading">Easy Section</span>
         </header>
         <div class="question">
           <!--1-->
           <li>
             <abbr title="Operating System" class="highlight">'OS'</abbr>
-            computer abbreviation usually means ?
+            computer abbreviation usually means ? ( +1 )
           </li>
-          <ul>
+          <ol>
             <li>Order of Significance</li>
             <li>Open Software</li>
             <li>Operating System</li>
             <li>Optical Sensor</li>
-          </ul>
-          <strong>Ans : Operating System</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_1" id="que_1" />
         </div>
         <div class="question">
           <!--2-->
@@ -98,9 +102,10 @@
             Great Quote by
             <a href="https://en.wikipedia.org/wiki/Chanakya" target="_blank"
               >Chanakya</a
-            >.
+            >. ( +1 auto )
           </li>
           <blockquote
+            class="quote"
             cite="https://thethoughtbulb.com/10-chanakya-quotes-on-leadership-team-work/"
           >
             <em
@@ -116,13 +121,14 @@
         <div class="question">
           <!--3-->
           <li>'.BAK' extension refers usually to what kind of file?</li>
-          <ul>
+          <ol>
             <li>Temp file</li>
             <li>Audio file</li>
             <li>Archive file</li>
             <li>Backup file</li>
-          </ul>
-          <strong>Ans : Backup file</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_3" id="que_3" />
         </div>
         <div class="question">
           <!--4-->
@@ -134,13 +140,14 @@
               >EEPROM</abbr
             >?
           </li>
-          <ul>
+          <ol>
             <li>Flash</li>
             <li>Falnge</li>
             <li>Fury</li>
             <li>FRAM</li>
-          </ul>
-          <strong>Ans : Flash</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_4" id="que_4" />
         </div>
         <div class="question">
           <!--5-->
@@ -153,30 +160,29 @@
             />
           </picture>
           <br />
-          <ul>
+          <ol>
             <li>Capacitor</li>
             <li>Transistor</li>
             <li>Processor</li>
             <li>LED</li>
-          </ul>
-          <strong>Ans : Transistor</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_5" id="que_5" />
         </div>
         <header class="hard_heading" id="hard">
-          <span class="level_heading">Hard Section :</span>
-          <a href="#easy" class="btn btn-outline-primary btn-sm"
-            >Jump to easy section</a
-          >
+          <span class="level_heading">Hard Section</span>
         </header>
         <div class="question">
           <!--6-->
           <li>Answer to the Life, Universe and Everything ?</li>
-          <ul>
+          <ol>
             <li>89</li>
             <li>98</li>
             <li>42</li>
             <li>32</li>
-          </ul>
-          <strong>Ans : 42</strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_6" id="que_6" />
         </div>
 
         <div class="question">
@@ -189,7 +195,7 @@
               >Drake equation?</a
             >
           </li>
-          <ul>
+          <ol>
             <li>
               N = R<sub>*</sub> &#183; f<sub>p</sub> &#183; n<sub>e</sub> &#183;
               f<sub>1</sub> &#183; f<sub>i</sub> &#183; f<sub>c</sub> &#183; L
@@ -206,12 +212,9 @@
               N = R<sub>*</sub> &#183; f<sub>p</sub> &#183; N<sub>i</sub> &#183;
               f<sub>1</sub> &#183; f<sub>i</sub> &#183; f<sub>c</sub> &#183; L
             </li>
-          </ul>
-          <strong
-            >Ans : N = R<sub>*</sub> &#183; f<sub>p</sub> &#183; n<sub>e</sub>
-            &#183; f<sub>1</sub> &#183; f<sub>i</sub> &#183; f<sub>c</sub>
-            &#183; L</strong
-          >
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_7" id="que_7" />
         </div>
         <div class="question">
           <!--8-->
@@ -225,18 +228,14 @@
             />
           </picture>
           <br />
-          <ul>
+          <ol>
             <li>Nick Fury</li>
             <li>Nikola Tesla</li>
             <li>Green Hulk</li>
             <li>Hammer Thor</li>
-          </ul>
-          <strong
-            >Ans :
-            <a href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank"
-              >Nikola Tesla</a
-            ></strong
-          >
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_8" id="que_8" />
         </div>
         <div class="question">
           <!--9-->
@@ -249,13 +248,14 @@
             >
             famous equation:
           </li>
-          <ul>
+          <ol>
             <li>E = cc<sup>2</sup></li>
             <li>E = mc<sup>2</sup></li>
             <li>E<sub>f</sub> = dc<sup>2</sup></li>
             <li>E<sub>f</sub> = mc<sup>2</sup></li>
-          </ul>
-          <strong>Ans : E = mc<sup>2</sup></strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_9" id="que_9" />
         </div>
         <div class="question">
           <!--10-->
@@ -264,16 +264,35 @@
             as <sup>3</sup>/<sub>11</sub> bear to <sup>5</sup>/<sub>9</sub> is
             equal to ……….. .
           </li>
-          <ul>
+          <ol>
             <li><sup>3</sup>/<sub>11</sub></li>
             <li><sup>5</sup>/<sub>27</sub></li>
             <li><sup>11</sup>/<sub>55</sub></li>
             <li><sup>1</sup>/<sub>55</sub></li>
-          </ul>
-          <strong>Ans : <sup>1</sup>/<sub>55</sub></strong>
+          </ol>
+          Ans :
+          <input type="text" class="input-field" name="que_10" id="que_10" />
         </div>
       </ol>
     </section>
+
+    <div class="container mb-4">
+      <div class="row justify-content-center">
+        <span class="result" id="result"></span>
+      </div>
+    </div>
+
+    <div class="container mb-4">
+      <div class="row justify-content-center">
+        <button
+          class="btn btn-primary"
+          onclick="cal_parcentage()"
+          type="submit"
+        >
+          Get Result
+        </button>
+      </div>
+    </div>
     <!-- footer tag starts here-->
     <footer>
       <div class="footer_para">
@@ -287,6 +306,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/general.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

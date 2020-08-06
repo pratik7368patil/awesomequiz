@@ -11,10 +11,92 @@
   margin: 0 auto;
 }
 
+.main-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("../images/newback.jpg");
+  width: auto;
+  height: 600px;
+  background-size: cover;
+}
+
+.head_size {
+  font-size: 30px;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  background: black;
+  border-radius: 0px;
+  border: 1px solid #fc0;
+}
+
+.main-btn {
+  background: transparent;
+  transition-property: background, color, border;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.main-btn:hover {
+  background: #fc0;
+  color: black;
+  border: 1px solid black;
+}
+
+.start-btn {
+  transition-property: background, color, border;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.start-btn:hover {
+  background: #fc0;
+  color: black;
+  border: 1px solid black;
+}
+
+.like-btn {
+  transition-property: background, color, border;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.like-btn:hover {
+  background: lightcoral;
+  color: black;
+  border: 1px solid black;
+}
+
+.main-head-main {
+  padding: 0px 20px 0px 20px;
+  transition-property: color, border-left, border-right;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.main-head-main:hover {
+  color: #fc0;
+  border-left: none;
+  border-right: none;
+}
+
 .main-head {
   padding: 0px 20px 0px 20px;
   border-right: 5px solid #fc0;
   border-left: 5px solid #fc0;
+  transition-property: color, border-left, border-right;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.main-head:hover {
+  color: #fc0;
+  border-left: none;
+  border-right: none;
 }
 
 .main-img {
@@ -29,7 +111,7 @@
 }
 .main-con {
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8));
   color: white;
   width: 100%;
@@ -51,16 +133,32 @@
 
 @media screen and (max-width: 678px) {
   .main-text-para {
-    font-size: 25px;
+    font-size: 35px;
+  }
+  .main-img {
+    height: 500px;
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 628px) {
+  .main-text-para {
+    font-size: 25px;
+  }
   .main-con {
     bottom: 0;
   }
+  .main-img {
+    height: 400px;
+  }
 }
 
+@media screen and (max-width: 345px) {
+  .main-head {
+    padding: 0px;
+    border-right: 0px;
+    border-left: 0px;
+  }
+}
 .bg-lightgray {
   background: lightgray;
 }
