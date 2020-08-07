@@ -23,6 +23,20 @@
   background-size: cover;
 }
 
+.card {
+  transition-property: margin-top;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.card:hover {
+  position: relative;
+  margin-top: -20px;
+  transition-property: margin-top;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
 .head_size {
   font-size: 30px;
 }
@@ -129,6 +143,12 @@
 
 .main-text-innerpara {
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .card:hover {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 678px) {

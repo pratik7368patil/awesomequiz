@@ -26,6 +26,23 @@
     >
       <div class="#">
         <a class="navbar-brand" href="#">
+          <span>
+            <svg
+              width="40px"
+              height="40px"
+              viewBox="0 0 16 16"
+              class="bi bi-award-fill"
+              fill="#fc0"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
+              />
+              <path
+                d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+              />
+            </svg>
+          </span>
           <span class="head_size">Awesome Quiz</span>
         </a>
       </div>
@@ -87,21 +104,28 @@
           >
             Try General </a
           ><br />
-          <form action="../data/data.php" method="POST">
-            <span
-              class="d-inline-block"
-              data-toggle="popover"
-              data-content="Work in Progress"
-            >
-              <button
-                class="btn btn-outline-primary btn-sm like-btn"
-                type="submit"
-                disabled
-              >
-                Like
-              </button>
-            </span>
-          </form>
+          <!-- LikeBtn.com BEGIN -->
+          <span
+            class="likebtn-wrapper"
+            data-theme="custom"
+            data-icon_l="hrt1"
+            data-icon_d="sml3-u"
+            data-icon_l_c_v="#00b344"
+            data-icon_d_c_v="#00b344"
+            data-identifier="item_1"
+          ></span>
+          <script>
+            (function (d, e, s) {
+              if (d.getElementById("likebtn_wjs")) return;
+              a = d.createElement(e);
+              m = d.getElementsByTagName(e)[0];
+              a.async = 1;
+              a.id = "likebtn_wjs";
+              a.src = s;
+              m.parentNode.insertBefore(a, m);
+            })(document, "script", "//w.likebtn.com/js/w/widget.js");
+          </script>
+          <!-- LikeBtn.com END -->
         </div>
       </div>
     </div>
@@ -143,7 +167,8 @@
             <div class="card-body">
               <h5 class="card-title main-head">Geography Quiz</h5>
               <p>
-                It is a game to test knowledge about a certain subject.
+                It is a game to test knowledge about a certain subject.<br />
+                Try Now!
               </p>
             </div>
             <div class="card-footer">
@@ -196,7 +221,8 @@
             <div class="card-body">
               <h5 class="card-title main-head">Space Quiz</h5>
               <p>
-                It is a game to test knowledge about a certain subject.
+                It is a game to test knowledge about a certain subject. <br />
+                Try Now!
               </p>
             </div>
             <div class="card-footer">
