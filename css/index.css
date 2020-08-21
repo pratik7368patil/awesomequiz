@@ -2,212 +2,218 @@
 * {
   font-family: "Changa", sans-serif;
 }
-.navbar {
-  background: white;
-}
 
-.main {
-  position: relative;
-  margin: 0 auto;
-}
-
-.main-img {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
-    ),
-    url("../images/newback.jpg");
+body {
+  margin: 0;
+  background-image: url("../images/quiznewback.svg");
   width: auto;
-  height: 600px;
   background-size: cover;
+  background-repeat: no-repeat;
+  transition: all;
+  transition-duration: 2s;
 }
 
-.card {
-  transition-property: margin-top;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.card:hover {
-  position: relative;
-  margin-top: -20px;
-  transition-property: margin-top;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
+.navbar {
+  margin: 10px 20px 20px 20px;
+  background: white;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  transition: all;
+  transition-duration: 2s;
 }
 
 .head_size {
   font-size: 30px;
 }
 
-.btn-primary,
-.btn-outline-primary {
-  background: black;
-  border-radius: 0px;
-  border: 1px solid #fc0;
+.anti-row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
-
-.main-btn {
-  background: transparent;
-  transition-property: background, color, border;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.main-btn:hover {
-  background: #fc0;
-  color: black;
-  border: 1px solid black;
-}
-
-.start-btn {
-  transition-property: background, color, border;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.start-btn:hover {
-  background: #fc0;
-  color: black;
-  border: 1px solid black;
-}
-
-.like-btn {
-  transition-property: background, color, border;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.like-btn:hover {
-  background: lightcoral;
-  color: black;
-  border: 1px solid black;
-}
-
-.main-head-main {
-  padding: 0px 20px 0px 20px;
-  transition-property: color, border-left, border-right;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.main-head-main:hover {
-  color: #fc0;
-  border-left: none;
-  border-right: none;
-}
-
-.main-head {
-  padding: 0px 20px 0px 20px;
-  border-right: 5px solid #fc0;
-  border-left: 5px solid #fc0;
-  transition-property: color, border-left, border-right;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-}
-
-.main-head:hover {
-  color: #fc0;
-  border-left: none;
-  border-right: none;
-}
-
-.main-img {
-  width: 100%;
-  max-height: 100vh;
-  margin: auto;
-}
-
-.imgbox {
-  display: grid;
-  height: 100%;
-}
-.main-con {
-  position: absolute;
-  bottom: 30%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8));
-  color: white;
-  width: 100%;
-  padding: 20px;
+.main {
+  height: 100vh;
 }
 .card {
   border-radius: 0;
   box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
   border: none;
 }
-.main-text-para {
-  text-align: center;
-  font-size: 60px;
+
+
+.dark-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
 }
 
-.main-text-innerpara {
-  text-align: center;
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 992px) {
-  .card:hover {
-    margin-top: 0px;
+#que_1_btn:hover {
+  fill: royalblue;
+}
+
+@media screen and (max-width: 900px) {
+  .head_size {
+    font-size: 20px;
+  }
+  .navbar {
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 678px) {
-  .main-text-para {
-    font-size: 35px;
-  }
-  .main-img {
-    height: 500px;
+@media screen and (max-width: 300px) {
+  .svg-col {
+    display: none;
   }
 }
 
-@media screen and (max-width: 628px) {
-  .main-text-para {
-    font-size: 25px;
+@media screen and (max-width: 350px) {
+  #main-svg {
+    height: 300px;
   }
-  .main-con {
-    bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .main-section {
+    padding-bottom: 50px;
   }
-  .main-img {
+  #main-svg {
     height: 400px;
   }
-}
-
-@media screen and (max-width: 345px) {
-  .main-head {
-    padding: 0px;
-    border-right: 0px;
-    border-left: 0px;
+  .main-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
   }
 }
-.bg-lightgray {
-  background: lightgray;
+
+#Vector_84:hover,
+#Vector_88:hover,
+#Vector_92:hover {
+  fill: black;
 }
 
-.footer_para {
+
+#que1 {
+  animation: updowm 1s linear alternate;
+  transform-box: fill-box;
+  animation-iteration-count: infinite;
+}
+
+#que2, #que3 {
+  animation: updowm 1.5s linear alternate;
+  transform-box: fill-box;
+  animation-iteration-count: infinite;
+}
+
+@keyframes updowm {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+.custom-btn {
+  position: absolute;
+  padding: 15px;
+  width: 250px;
   text-align: center;
-  background-color: black;
-  color: white;
-  padding: 10px 10px 10px 10px;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.custom-btn span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#0c002b,#1779ff);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0%
+  {
+    transform:translateX(-100%);
+  }
+  100%
+  {
+    transform:translateX(100%);
+  }
+}
+
+.custom-btn span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#0c002b,#1779ff);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
 }
 
 
-/* Everything about scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+@keyframes animate2 {
+  0%
+  {
+    transform:translateY(-100%);
+  }
+  100%
+  {
+    transform:translateY(100%);
+  }
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+
+.custom-btn span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#0c002b,#1779ff);
+  animation: animate3 2s linear infinite;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #fc0;
+
+@keyframes animate3 {
+  0%
+  {
+    transform:translateX(100%);
+  }
+  100%
+  {
+    transform:translateX(-100%);
+  }
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+
+.custom-btn span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#0c002b,#1779ff);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
 }
 
+
+@keyframes animate4 {
+  0%
+  {
+    transform:translateY(100%);
+  }
+  100%
+  {
+    transform:translateY(-100%);
+  }
+}

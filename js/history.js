@@ -1,3 +1,59 @@
+function checkDark() {
+  let x = 'rgb(27, 27, 27)'
+  if(document.body.style.background === x) {
+    normalMode();
+  } else {
+    dark();
+  }
+}
+
+function dark() {
+  document.body.style.background = "#1B1B1B";
+  document.getElementById('bar').style.background = "#7386D5";
+  let cards = document.getElementsByClassName('card');
+  let clips = document.getElementsByClassName('clip');
+  let cardBtn = document.getElementsByClassName('card-btn');
+  for(let i=0; i<cards.length; i++) {
+    cards[i].style.backgroundColor = "rgba(0,0,0,0.2)";
+    cards[i].style.color = "lightgray";
+  }
+
+  for(let i=0; i<cardBtn.length; i++) {
+    cardBtn[i].style.color = "lightgray";
+    cardBtn[i].style.border = "2px solid #7386D5";
+  }
+
+  for(let i=0; i<clips.length; i++) {
+    clips[i].style.color = "black";
+  }
+}
+function normalMode() {
+  document.body.style.background = "white";
+  document.getElementById('bar').style.background = "white";
+  let cards = document.getElementsByClassName('card');
+  let clips = document.getElementsByClassName('clip');
+  let cardBtn = document.getElementsByClassName('card-btn');
+  for(let i=0; i<cards.length; i++) {
+    cards[i].style.backgroundColor = "white";
+    cards[i].style.color = "black";
+  }
+
+  for(let i=0; i<cardBtn.length; i++) {
+    cardBtn[i].style.color = "black";
+    cardBtn[i].style.border = "2px solid black";
+  }
+
+  for(let i=0; i<clips.length; i++) {
+    clips[i].style.color = "black";
+  }
+}
+
+
+function enable() {
+  document.getElementById("prev").setAttribute("href", "#questionslide");
+  document.getElementById("next").setAttribute("href", "#questionslide");
+}
+
 function cal_parcentage() {
   let anskey = {
     1: "1",
@@ -5,11 +61,7 @@ function cal_parcentage() {
     3: "3",
     4: "1",
     5: "4",
-    6: "4",
-    7: "1",
-    8: "1",
-    9: "2",
-    10: "4"
+    
   };
 
   let ans_1 = document.getElementById("que_1").value;
@@ -17,12 +69,7 @@ function cal_parcentage() {
   let ans_3 = document.getElementById("que_3").value;
   let ans_4 = document.getElementById("que_4").value;
   let ans_5 = document.getElementById("que_5").value;
-  let ans_6 = document.getElementById("que_6").value;
-  let ans_7 = document.getElementById("que_7").value;
-  let ans_8 = document.getElementById("que_8").value;
-  let ans_9 = document.getElementById("que_9").value;
-  let ans_10 = document.getElementById("que_10").value;
-
+  
   let total_correct = 0;
 
   if (ans_1 === anskey[1]) {
@@ -40,33 +87,8 @@ function cal_parcentage() {
   if (ans_5 === anskey[5]) {
     total_correct += 1;
   }
-  if (ans_6 === anskey[6]) {
-    total_correct += 1;
-  }
-  if (ans_7 === anskey[7]) {
-    total_correct += 1;
-  }
-  if (ans_8 === anskey[8]) {
-    total_correct += 1;
-  }
-  if (ans_9 === anskey[9]) {
-    total_correct += 1;
-  }
-  if (ans_10 === anskey[10]) {
-    total_correct += 1;
-  }
 
-  let result = document.getElementById("result");
-  result.innerHTML = `Your result : ${total_correct} / 10`;
-  result.style.fontSize = "25px";
-  if (total_correct < 4) {
-    result.style.color = "red";
-  } else if (total_correct > 4 && total_correct < 6) {
-    result.style.color = "orange";
-  } else {
-    result.style.color = "green";
-  }
   alert(
-    `You got ${total_correct}/10 correct! and ${(total_correct / 10) * 100} %`
+    `You got ${total_correct}/5 correct! and ${(total_correct / 5) * 100} %`
   );
 }

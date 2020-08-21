@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+* {
+  font-family: "Changa", sans-serif;
+}
+
+body {
+  margin: 0;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all;
+  transition-duration: 2s;
+}
+.navbar {
+  background: white;
+  transition: all;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  transition-duration: 2s;
+}
+
+.main-header {
+  padding: 80px 0px 80px 0px;
+}
+.anti-row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card {
+  border-radius: 0;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all;
+  transition-duration: 2s;
+}
+.card-btn {
+  border-radius: 0px;
+  border: 2px solid black;
+  background: transparent; /*#6190e8*/
+  color: black;
+}
+
+.btn:hover {  
+  background: #6190e8;
+  color: white;
+}
+
+.bg-lightgray {
+  background: lightgray;
+}
+
+.footer_para {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 50px 0px 50px 0px;
+}
+
+.dark-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  z-index: 1;
+}

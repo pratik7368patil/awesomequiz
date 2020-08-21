@@ -2,9 +2,14 @@
 * {
   font-family: "Changa", sans-serif;
 }
+
 .navbar {
   background: white;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  transition: all;
+  transition-duration: 2s;
 }
+
 header {
   text-align: center;
   padding: 20px 0px 20px 0px;
@@ -18,14 +23,8 @@ header {
 }
 
 .main-head {
+  color: #7386D5;
   padding: 0px 20px 0px 20px;
-  color: white;
-  border-right: 5px solid #fc0;
-  border-left: 5px solid #fc0;
-}
-
-.main-section {
-  margin: 200px 100px 0px 100px;
 }
 
 @media screen and (max-width: 578px) {
@@ -38,21 +37,28 @@ header {
   .main-head {
     color: black;
   }
+  #content {
+    padding: 0px;
+  }
 }
 
-.highlight {
-  background-color: yellow;
+#content {
+  transition: all;
+  transition-duration: 2s;
 }
 
 .all_question {
   background-color: whitesmoke;
   margin: 20px 20px 20px 20px;
+  padding-top: 30px;
+  transition: all;
+  transition-duration: 2s;
 }
 
 .quote {
   padding: 20px 20px 10px 20px;
-  border-left: 4px solid #fc0;
-  background: lightblue;
+  border-left: 4px solid #1779ff;
+  background: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,225,0.2));
 }
 
 .footer_para {
@@ -72,14 +78,14 @@ header {
   border-bottom: 2px solid black;
   background: transparent;
   transition-property: border-bottom, background;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 
 .input-field:focus {
   margin: 20px 0px 20px 0px;
   background: white;
-  border-bottom: 2px solid #fc0;
+  border-bottom: 2px solid #A7BFE8;
   outline: none;
 }
 
@@ -97,14 +103,14 @@ header {
 .btn-primary {
   background: black;
   border-radius: 0px;
-  border: 1px solid #fc0;
+  border: 1px solid #7386D5;
   transition-property: background, color, border;
   transition-duration: 0.5s;
   transition-timing-function: linear;
 }
 
 .btn-primary:hover {
-  background: #fc0;
+  background: #7386D5;
   color: black;
   border: 1px solid black;
 }
@@ -113,23 +119,10 @@ header {
   color: white;
 }
 
-/* Everything about scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+.dark-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #fc0;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-

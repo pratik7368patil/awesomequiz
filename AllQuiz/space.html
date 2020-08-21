@@ -17,262 +17,321 @@
       href="../images/titleicon.png"
     />
     <link rel="stylesheet" href="../css/space.css" />
+    <link rel="stylesheet" type="text/css" href="../css/simple-sidebar.css">
     <title>Awesome Quiz</title>
   </head>
   <body>
-    <nav
-      class="navbar sticky-top navbar-expand-lg navbar-light"
-      id="bar"
-      data-spy="affix"
-      data-offset-top="400"
-    >
-      <div class="#">
-        <a class="navbar-brand" href="../index.html">
-          <span class="head_size">Awesome Quiz</span>
-        </a>
+
+
+    <section>
+      <div class="main-section">
+        <div class="sidebar" id="sidebar"> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="sidebar-head text-center pb-4 pt-4">
+            <h3>Quick Navigation</h3>
+          </div>
+          <div class="list-group list-group-flush">
+            <a href="#que1" class="list-group-item sidebar-a-back">Que. 1</a>
+            <a href="#que2" class="list-group-item sidebar-a-back">Que. 2</a>
+            <a href="#que3" class="list-group-item sidebar-a-back">Que. 3</a>
+            <a href="#que4" class="list-group-item sidebar-a-back">Que. 4</a>
+            <a href="#que5" class="list-group-item sidebar-a-back">Que. 5</a>
+            <a href="#que6" class="list-group-item sidebar-a-back">Que. 6</a>
+            <a href="#que7" class="list-group-item sidebar-a-back">Que. 7</a>
+            <a href="#que8" class="list-group-item sidebar-a-back">Que. 8</a>
+            <a href="#que9" class="list-group-item sidebar-a-back">Que. 9</a>
+            <a href="#que10" class="list-group-item sidebar-a-back">Que. 10</a>
+            <hr />
+            <a href="#" onclick="cal_parcentage()" class="btn btn-primary sidebar-a-back mb-4">Submit and get Result</a>
+          </div>
+        </div>
+
+        <div class="content" id="content">
+          <a href="javascript:void(0)" class="new-open-btn" onclick="action()">
+            <svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-arrow-left-square" fill="#7386D5" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
+              <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/>
+            </svg>
+          </a>
+
+          <a href="javascript:void(0)" class="dark-mode" onclick="checkDark()">
+            <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-brightness-high-fill" fill="#7386D5" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+              <path fill-rule="evenodd" d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+          </a>
+
+           <nav class="navbar navbar-expand-lg navbar-light" id="bar" data-spy="affix" data-offset-top="400">
+
+            <a href="javascript:void(0)" onclick="action()">
+              <svg width="25px" height="25px" id="left-arrow" viewBox="0 0 16 16" class="bi bi-arrow-left-square" fill="#7386D5" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
+                <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/>
+              </svg>
+            </a>
+              
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../AllQuiz/history.html" target="_blank"
+                      >History</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../AllQuiz/geography.html" target="_blank"
+                      >Geography</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">Space</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../AllQuiz/general.html" target="_blank"
+                      >General</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <section class="main-section">
+              <header>
+                <h1><span class="main-head" id="main-head">Space Quiz</span></h1>
+              </header>
+              <ol class="all_question" id="all_question">
+
+                <div class="question" id="que1">
+                  <!--1-->
+                  <li>
+                    Which star is at the center of our Solar System?
+                  </li>
+                  <ol>
+                    <li>Earth</li>
+                    <li>Sun</li>
+                    <li>Mars</li>
+                    <li>Jupiter</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_1" id="que_1" />
+                </div>
+                <div class="question" id="que2">
+                  <!--2-->
+                  <li>
+                    How much time does sun rays take to reach earth?
+                  </li>
+                  <ol>
+                    <li>10 min</li>
+                    <li>5 min</li>
+                    <li>8 min</li>
+                    <li>6 min</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_2" id="que_2" />
+                </div>
+                <div class="question" id="que3">
+                  <!--3-->
+                  <li>Which planet is nearest tothe earth?</li>
+                  <ol>
+                    <li>Mercury</li>
+                    <li>Venus</li>
+                    <li>Mars</li>
+                    <li>Jupiter</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_3" id="que_3" />
+                </div>
+                <div class="question" id="que4">
+                  <!--4-->
+                  <li>
+                    Who was the first person to reach space?
+                  </li>
+                  <ol>
+                    <li>Neil Armstrong</li>
+                    <li>Yuri Gagarin</li>
+                    <li>Nick Fury</li>
+                    <li>Iron Man</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_4" id="que_4" />
+                </div>
+                <div class="question" id="que5">
+                  <!--5-->
+                  <li>Recognize following image.</li>
+                  <picture>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Yuri_Gagarin_%281961%29_-_Restoration.jpg/440px-Yuri_Gagarin_%281961%29_-_Restoration.jpg"
+                      height="150"
+                      width="100"
+                    />
+                  </picture>
+                  <br />
+                  <ol>
+                    <li>Nick Fury</li>
+                    <li>Neil Armstrong</li>
+                    <li>Rakesh Sharma</li>
+                    <li>Yuri Gagarin</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_5" id="que_5" />
+                </div>
+                
+                <div class="question" id="que6">
+                  <!--6-->
+                  <li>How long a solar eclipse can last?</li>
+                  <ol>
+                    <li>7<sup>1</sup>/<sub>2</sub> min</li>
+                    <li>6<sup>2</sup>/<sub>9</sub> min</li>
+                    <li>7<sup>2</sup>/<sub>9</sub> min</li>
+                    <li>6<sup>1</sup>/<sub>2</sub> min</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_5" id="que_6" />
+                </div>
+
+                <div class="question" id="que7">
+                  <!--7-->
+                  <li>
+                    What is the diameter of MARS?
+                  </li>
+                  <ol>
+                    <li>86,881 miles (139,822 km).</li>
+                    <li>868 miles (2992 km).</li>
+                    <li>4,212 miles (6,779 km)</li>
+                    <li>6,881 miles (12,822 km).</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_7" id="que_7" />
+                </div>
+                <div class="question" id="que8">
+                  <!--8-->
+                  <li>Identify the following image?</li>
+                  <picture>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hs-2009-25-e-full.jpg/553px-Hs-2009-25-e-full.jpg"
+                      height="150"
+                      width="120"
+                      alt="Nebula"
+                    />
+                  </picture>
+                  <br />
+                  <ol>
+                    <li>Galaxy</li>
+                    <li>Birth of Planet</li>
+                    <li>Dust Cloud</li>
+                    <li>Nebula</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_8" id="que_8" />
+                </div>
+                <div class="question" id="que9">
+                  <!--9-->
+                  <li>
+                    Which of these is NOT a type of galaxy formation?
+                  </li>
+                  <ol>
+                    <li>Elliptical</li>
+                    <li>Normal Spiral</li>
+                    <li>Barred Spiral</li>
+                    <li>Quasi-spherical</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_9" id="que_9" />
+                </div>
+                <div class="question" id="que10">
+                  <!--10-->
+                  <li>
+                    How long is a day on Venus?
+                  </li>
+                  <ol>
+                    <li>55 days</li>
+                    <li>20 days</li>
+                    <li>200 days</li>
+                    <li>243 days</li>
+                  </ol>
+                  Ans :
+                  <input type="text" class="input-field" name="que_10" id="que_10" />
+                </div>
+              </ol>
+            </section>
+
+            <div class="container mb-4">
+              <div class="row justify-content-center">
+                <span class="result" id="result"></span>
+              </div>
+            </div>
+
+            <div class="container mb-4">
+              <div class="row justify-content-center">
+                <button
+                  class="btn btn-primary"
+                  onclick="cal_parcentage()"
+                  type="submit"
+                >
+                  Get Result
+                </button>
+              </div>
+            </div>
+
+            <!-- footer tag starts here-->
+            <footer>
+              <div class="footer_para">
+                <p>
+                  &copy; Copyright 2020
+                  <a href="#top" class="web_link">awesomequiz.io</a> made with
+                  &#10084;&#65039;
+                </p>
+              </div>
+            </footer>
+
+
+        </div>
       </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarSupportedContent"
-      >
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../AllQuiz/history.html" target="_blank"
-              >History</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../AllQuiz/geography.html" target="_blank"
-              >Geography</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">Space</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../AllQuiz/general.html" target="_blank"
-              >General</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="main">
-      <picture>
-        <img src="../images/space.jpg" class="img-fluid allow-text" />
-      </picture>
-    </div>
-
-    <section class="main-section">
-      <header>
-        <h1><span class="main-head">Space Quiz</span></h1>
-      </header>
-      <ol class="all_question">
-        <header class="easy_heading" id="easy">
-          <span class="level_heading">Easy Section</span>
-        </header>
-        <div class="question">
-          <!--1-->
-          <li>
-            Which star is at the center of our Solar System?
-          </li>
-          <ol>
-            <li>Earth</li>
-            <li>Sun</li>
-            <li>Mars</li>
-            <li>Jupiter</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_1" id="que_1" />
-        </div>
-        <div class="question">
-          <!--2-->
-          <li>
-            How much time does sun rays take to reach earth?
-          </li>
-          <ol>
-            <li>10 min</li>
-            <li>5 min</li>
-            <li>8 min</li>
-            <li>6 min</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_2" id="que_2" />
-        </div>
-        <div class="question">
-          <!--3-->
-          <li>Which planet is nearest tothe earth?</li>
-          <ol>
-            <li>Mercury</li>
-            <li>Venus</li>
-            <li>Mars</li>
-            <li>Jupiter</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_3" id="que_3" />
-        </div>
-        <div class="question">
-          <!--4-->
-          <li>
-            Who was the first person to reach space?
-          </li>
-          <ol>
-            <li>Neil Armstrong</li>
-            <li>Yuri Gagarin</li>
-            <li>Nick Fury</li>
-            <li>Iron Man</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_4" id="que_4" />
-        </div>
-        <div class="question">
-          <!--5-->
-          <li>Recognize following image.</li>
-          <picture>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Yuri_Gagarin_%281961%29_-_Restoration.jpg/440px-Yuri_Gagarin_%281961%29_-_Restoration.jpg"
-              height="150"
-              width="100"
-            />
-          </picture>
-          <br />
-          <ol>
-            <li>Nick Fury</li>
-            <li>Neil Armstrong</li>
-            <li>Rakesh Sharma</li>
-            <li>Yuri Gagarin</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_5" id="que_5" />
-        </div>
-        <header class="hard_heading" id="hard">
-          <span class="level_heading">Hard Section</span>
-        </header>
-        <div class="question">
-          <!--6-->
-          <li>How long a solar eclipse can last?</li>
-          <ol>
-            <li>7<sup>1</sup>/<sub>2</sub> min</li>
-            <li>6<sup>2</sup>/<sub>9</sub> min</li>
-            <li>7<sup>2</sup>/<sub>9</sub> min</li>
-            <li>6<sup>1</sup>/<sub>2</sub> min</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_5" id="que_6" />
-        </div>
-
-        <div class="question">
-          <!--7-->
-          <li>
-            What is the diameter of MARS?
-          </li>
-          <ol>
-            <li>86,881 miles (139,822 km).</li>
-            <li>868 miles (2992 km).</li>
-            <li>4,212 miles (6,779 km)</li>
-            <li>6,881 miles (12,822 km).</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_7" id="que_7" />
-        </div>
-        <div class="question">
-          <!--8-->
-          <li>Identify the following image?</li>
-          <picture>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hs-2009-25-e-full.jpg/553px-Hs-2009-25-e-full.jpg"
-              height="150"
-              width="120"
-              alt="Nebula"
-            />
-          </picture>
-          <br />
-          <ol>
-            <li>Galaxy</li>
-            <li>Birth of Planet</li>
-            <li>Dust Cloud</li>
-            <li>Nebula</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_8" id="que_8" />
-        </div>
-        <div class="question">
-          <!--9-->
-          <li>
-            Which of these is NOT a type of galaxy formation?
-          </li>
-          <ol>
-            <li>Elliptical</li>
-            <li>Normal Spiral</li>
-            <li>Barred Spiral</li>
-            <li>Quasi-spherical</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_9" id="que_9" />
-        </div>
-        <div class="question">
-          <!--10-->
-          <li>
-            How long is a day on Venus?
-          </li>
-          <ol>
-            <li>55 days</li>
-            <li>20 days</li>
-            <li>200 days</li>
-            <li>243 days</li>
-          </ol>
-          Ans :
-          <input type="text" class="input-field" name="que_10" id="que_10" />
-        </div>
-      </ol>
     </section>
-
-    <div class="container mb-4">
-      <div class="row justify-content-center">
-        <span class="result" id="result"></span>
-      </div>
-    </div>
-
-    <div class="container mb-4">
-      <div class="row justify-content-center">
-        <button
-          class="btn btn-primary"
-          onclick="cal_parcentage()"
-          type="submit"
-        >
-          Get Result
-        </button>
-      </div>
-    </div>
-
-    <!-- footer tag starts here-->
-    <footer>
-      <div class="footer_para">
-        <p>
-          &copy; Copyright 2020
-          <a href="#top" class="web_link">awesomequiz.io</a> made with
-          &#10084;&#65039;
-        </p>
-      </div>
-    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript">
+
+      function action() {
+        if(document.getElementById("sidebar").style.width === "300px") {
+          closeNav();
+        } else {
+          openNav();
+        }
+      }
+      function openNav() {
+        document.getElementById("sidebar").style.width = "300px";
+        if(screen.width <= 750) {
+          document.getElementById("content").style.marginLeft = "0px";
+        } else {
+          document.getElementById("content").style.marginLeft = "300px";
+        }
+      }
+
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("content").style.marginLeft= "0";
+      }
+    </script>
     <script src="../js/space.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

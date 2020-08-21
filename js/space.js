@@ -1,3 +1,28 @@
+function checkDark() {
+  if(document.getElementById('content').style.background === "rgb(27, 27, 27)") {
+    normalMode();
+  } else {
+    dark();
+  }
+}
+
+function dark() {
+  document.getElementById('content').style.background = "#1B1B1B";
+  document.getElementById('bar').style.background = "#7386D5";
+  document.getElementById('left-arrow').style.fill = "black";
+  document.getElementById('main-head').style.color = "lightgray";
+  document.getElementById('all_question').style.background = "rgba(0,0,0,0.2)";
+  document.getElementById('all_question').style.color = "lightgray";
+}
+function normalMode() {
+  document.getElementById('content').style.background = "white";
+  document.getElementById('bar').style.background = "white";
+  document.getElementById('left-arrow').style.fill = "#7386D5";
+  document.getElementById('main-head').style.color = "#7386D5";
+  document.getElementById('all_question').style.background = "whitesmoke";
+  document.getElementById('all_question').style.color = "black";
+}
+
 function cal_parcentage() {
   let anskey = {
     1: "2",

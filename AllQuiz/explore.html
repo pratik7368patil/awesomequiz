@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/titleicon.png"
+    />
+
+    <link rel="stylesheet" href="../css/explore.css" />
+
+    <title>Awesome Quiz App</title>
+  </head>
+  <body>
+    <a href="javascript:void(0)" class="dark-mode" onclick="checkDark()">
+      <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-brightness-high-fill" fill="#7386D5" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+        <path fill-rule="evenodd" d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </svg>
+    </a>
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light"
+      id="bar"
+      data-spy="affix"
+      data-offset-top="400"
+    >
+      <div class="#">
+        <a class="navbar-brand" href="../index.html">
+          <span class="head_size">Awesome Quiz</span>
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html" target="_blank">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="geography.html" target="_blank"
+              >Geography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="space.html" target="_blank">Space</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="general.html" target="_blank">General</a>
+          </li>
+          <!-- <li class="nav-item">
+              <button class="nav-link darkmode-btn" onclick="darkmode()" target="_blank">
+                <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+                </svg>
+              </button>
+            </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <header class="main-header">
+      <div class="row anti-row justify-content-center">
+        <h1><span class="head-all" id="main-head">All Quizes</span></h1>
+      </div>
+    </header>
+    <section class="container mt-4 mb-4">
+      <div class="row mt-4 mb-2">
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
+          <div class="card flex-fill">
+            <picture>
+              <img
+                src="../images/general.jpg"
+                class="card-img-top"
+                alt="history"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title card-head">General Quiz</h5>
+              <p>
+                A quiz is a form of game or mind sport, attempt to answer
+                questions correctly.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="general.html"
+                class="btn btn-primary card-btn"
+                target="_blank"
+                >Start</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
+          <div class="card flex-fill">
+            <picture>
+              <img
+                src="../images/geo1.jpg"
+                class="card-img-top"
+                alt="history"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title card-head">Geography Quiz</h5>
+              <p>
+                It is a game to test knowledge about a certain subject.<br />
+                Try Now!
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="geography.html"
+                target="_blank"
+                class="btn btn-primary card-btn"
+                >Start</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
+          <div class="card flex-fill">
+            <picture>
+              <img
+                src="../images/history.jpg"
+                class="card-img-top"
+                alt="history"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title card-head">History Quiz</h5>
+              <p>
+                A quiz is a form of game or mind sport, attempt to answer
+                questions correctly.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="history.html"
+                target="_blank"
+                class="btn btn-primary card-btn"
+                >Start</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex mt-2">
+          <div class="card flex-fill">
+            <picture>
+              <img
+                src="../images/space.jpg"
+                class="card-img-top"
+                alt="space"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title card-head">Space Quiz</h5>
+              <p>
+                It is a game to test knowledge about a certain subject. <br />
+                Try Now!
+              </p>
+            </div>
+            <div class="card-footer">
+              <a
+                href="space.html"
+                target="_blank"
+                class="btn btn-primary card-btn"
+                >Start</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer tag starts here-->
+    <footer>
+      <div class="footer_para">
+        <p>
+          &copy; Copyright 2020
+          <a href="#top" class="web_link">awesomequiz.io</a> made with
+          &#10084;&#65039;
+        </p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/explore.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

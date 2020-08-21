@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+* {
+  font-family: "Changa", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /*background: #A7BFE8;*/
+  background: #1B1B1B;
+  color: white;
+  overflow-y: scroll;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.new-open-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 30px;
+}
+
+.list-group-item {
+  background: rgba(0,0,0,0.2);
+  margin: 2px;
+}
+
+.sidebar-a-back:hover {
+  background: #7386D5;
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  margin-left: 300px;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 0px;
+  }
+
+  .content {
+    margin-left: 0px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.4);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
