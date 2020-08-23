@@ -3,7 +3,7 @@
   font-family: "Changa", sans-serif;
 }
 body {
-  transition: all;
+  transition: background;
   transition-duration: 2s;
 }
 .navbar {

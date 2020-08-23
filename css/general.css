@@ -3,6 +3,10 @@
   font-family: "Changa", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   background: white;
   box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
@@ -43,9 +47,10 @@ header {
 }
 
 #content {
-  transition: all;
-  transition-duration: 2s;
+  transition: background, margin;
+  transition-duration: 1s;
 }
+
 
 .all_question {
   background-color: whitesmoke;
@@ -70,6 +75,12 @@ header {
 
 .question {
   padding: 5px 0px 20px 0px;
+}
+
+.question > li {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .input-field {

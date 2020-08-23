@@ -64,11 +64,17 @@ function cal_parcentage() {
     
   };
 
-  let ans_1 = document.getElementById("que_1").value;
-  let ans_2 = document.getElementById("que_2").value;
-  let ans_3 = document.getElementById("que_3").value;
-  let ans_4 = document.getElementById("que_4").value;
-  let ans_5 = document.getElementById("que_5").value;
+  let temp_1 = document.querySelector('input[name="ans_1"]:checked');
+  let temp_2 = document.querySelector('input[name="ans_2"]:checked');
+  let temp_3 = document.querySelector('input[name="ans_3"]:checked');
+  let temp_4 = document.querySelector('input[name="ans_4"]:checked');
+  let temp_5 = document.querySelector('input[name="ans_5"]:checked');
+
+  let ans_1 = temp_1 != null ? temp_1.value : 0;
+  let ans_2 = temp_2 != null ? temp_2.value : 0;
+  let ans_3 = temp_3 != null ? temp_3.value : 0;
+  let ans_4 = temp_4 != null ? temp_4.value : 0;
+  let ans_5 = temp_5 != null ? temp_5.value : 0;
   
   let total_correct = 0;
 

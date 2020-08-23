@@ -37,16 +37,27 @@ function cal_parcentage() {
     10: "4"
   };
 
-  let ans_1 = document.getElementById("que_1").value;
-  let ans_2 = document.getElementById("que_2").value;
-  let ans_3 = document.getElementById("que_3").value;
-  let ans_4 = document.getElementById("que_4").value;
-  let ans_5 = document.getElementById("que_5").value;
-  let ans_6 = document.getElementById("que_6").value;
-  let ans_7 = document.getElementById("que_7").value;
-  let ans_8 = document.getElementById("que_8").value;
-  let ans_9 = document.getElementById("que_9").value;
-  let ans_10 = document.getElementById("que_10").value;
+  let temp_1 = document.querySelector('input[name="ans_1"]:checked');
+  let temp_2 = document.querySelector('input[name="ans_2"]:checked');
+  let temp_3 = document.querySelector('input[name="ans_3"]:checked');
+  let temp_4 = document.querySelector('input[name="ans_4"]:checked');
+  let temp_5 = document.querySelector('input[name="ans_5"]:checked');
+  let temp_6 = document.querySelector('input[name="ans_6"]:checked');
+  let temp_7 = document.querySelector('input[name="ans_7"]:checked');
+  let temp_8 = document.querySelector('input[name="ans_8"]:checked');
+  let temp_9 = document.querySelector('input[name="ans_9"]:checked');
+  let temp_10 = document.querySelector('input[name="ans_10"]:checked');
+
+  let ans_1 = temp_1 != null ? temp_1.value : 0;
+  let ans_2 = temp_2 != null ? temp_2.value : 0;
+  let ans_3 = temp_3 != null ? temp_3.value : 0;
+  let ans_4 = temp_4 != null ? temp_4.value : 0;
+  let ans_5 = temp_5 != null ? temp_5.value : 0;
+  let ans_6 = temp_6 != null ? temp_6.value : 0;
+  let ans_7 = temp_7 != null ? temp_7.value : 0;
+  let ans_8 = temp_8 != null ? temp_8.value : 0;
+  let ans_9 = temp_9 != null ? temp_9.value : 0;
+  let ans_10 = temp_10 != null ? temp_10.value : 0;
 
   let total_correct = 0;
 

@@ -44,7 +44,6 @@ body {
   bottom: 0;
   right: 0;
   margin: 30px;
-  z-index: 20;
 }
 
 .flex-col {
